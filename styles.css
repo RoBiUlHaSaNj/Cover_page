@@ -1,0 +1,137 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Main Heading Styling */
+h1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5em;
+    border-bottom: 5px solid #388E3C;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Container for Form Elements */
+form {
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin: 15px 0;
+}
+
+/* Logo Selection */
+.logo-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#logo {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+#logoPreview {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+}
+
+/* Input Field Styling */
+input[type="file"], input[type="text"], input[type="date"] {
+    width: calc(100% - 22px);
+    max-width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover, input[type="text"]:hover, input[type="date"]:hover {
+    border-color: #4CAF50;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Output Container Styling */
+#coverPageOutput {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: calc(100% - 22px);
+    max-width: 600px;
+    margin: 20px auto;
+}
