@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Page Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cover Page Generator</h1>
+    <form id="coverPageForm">
+        <div class="form-group">
+            <label for="logo" class="logo-label">Choose Logo</label>
+            <input type="file" id="logo" accept="image/*" onchange="previewLogo()">
+            <img id="logoPreview" src="" alt="Logo Preview">
+        </div>
+        <div class="form-group">
+            <input type="text" id="topic" placeholder="Topic" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="courseTitle" placeholder="Course Title" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="courseCode" placeholder="Course Code" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="submittedBy" placeholder="Submitted by" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="idNo" placeholder="ID No." required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="section" placeholder="Section" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="department" placeholder="Department" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="submittedTo" placeholder="Submitted To" required>
+        </div>
+        <div class="form-group">
+            <input type="date" id="submissionDate" required>
+        </div>
+        <button type="button" onclick="generateCoverPage()">Generate Cover Page</button>
+        <button id="downloadButton" style="display: none;" onclick="downloadCoverPage()">Download Cover Page</button>
+    </form>
+    <div id="coverPageOutput"></div>
+    <script src="script.js"></script>
+</body>
+</html>
