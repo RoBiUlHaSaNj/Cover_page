@@ -1,1 +1,1 @@
-Cover page
+<h1>Cover page</h1>
